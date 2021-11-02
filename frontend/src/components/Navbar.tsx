@@ -180,10 +180,10 @@ function Navbar() {
             })}
           >
             <MenuIcon />
-          </IconButton>
-          <img src="/img/hospitalisation.png" width="50px"></img>
+          </IconButton> &nbsp;
+          <img src="/img/hospitalisation.png" width="30px"></img>
           <Typography variant="h6" className={classes.title}>
-            ระบบรับผู้ป่วยใน
+          &nbsp;ระบบรับผู้ป่วยใน
           </Typography>
           <Typography variant="subtitle1" >
             {nurse?.Name} &nbsp;&nbsp;       
