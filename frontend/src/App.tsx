@@ -14,7 +14,7 @@ import Home from "./components/Home";
 import Nurses from "./components/Nurses";
 import NurseCreate from "./components/NurseCreate";
 
-import { AdmissionInterface } from "./models/IAdmission";
+
 import Admission from "./components/Admission";
 import AdmissionCreate from "./components/AdmissionCreate";
 import { NurseInterface } from "./models/INurse";
