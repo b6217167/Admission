@@ -154,6 +154,20 @@ function NurseCreate() {
               />
             </FormControl>
           </Grid>
+          <Grid item xs={6}>
+            <FormControl fullWidth variant="outlined">
+              <p>หมายเลขโทรศัพท์</p>
+              <TextField
+                id="Tel"
+                variant="outlined"
+                type="string"
+                size="medium"
+                placeholder="กรุณากรอกหมายเลขโทรศัพท์"
+                value={nurse.Tel || ""}
+                onChange={handleInputChange}
+              />
+            </FormControl>
+          </Grid>
           <Grid item xs={12}>
             <Button component={RouterLink} to="/nurses" variant="contained">
               กลับ

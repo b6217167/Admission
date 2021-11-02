@@ -95,6 +95,9 @@ function Nurses() {
                 <TableCell align="center" width="45%">
                   รหัสบัตรประจำตัวประชาชน
                 </TableCell>
+                <TableCell align="center" width="45%">
+                  หมายเลขโทรศัพท์
+                </TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
@@ -103,6 +106,7 @@ function Nurses() {
                   <TableCell align="center">{nurse.ID}</TableCell>
                   <TableCell align="center">{nurse.Name}</TableCell>
                   <TableCell align="center">{nurse.Pid}</TableCell>
+                  <TableCell align="center">{nurse.Tel}</TableCell>
                 </TableRow>
               ))}
             </TableBody>
