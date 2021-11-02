@@ -53,6 +53,7 @@ func SetupDatabase() {
 	huy := Patient{
 		Name:      "huy",
 		Number_id: "12xxxxxxxxxxx",
+		Disease:   "-",
 		Date:      time.Now(),
 		Record_by: Sumaree,
 	}
@@ -61,6 +62,7 @@ func SetupDatabase() {
 	guli := Patient{
 		Name:      "guli",
 		Number_id: "56xxxxxxxxxxx",
+		Disease:   "KKK",
 		Date:      time.Now(),
 		Record_by: Nattawee,
 	}
@@ -70,6 +72,7 @@ func SetupDatabase() {
 		Name:      "ball",
 		Number_id: "79xxxxxxxxxxx",
 		Date:      time.Now(),
+		Disease:   "P",
 		Record_by: Nattawee,
 	}
 	db.Model(&Patient{}).Create(&ball)

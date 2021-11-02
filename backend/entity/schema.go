@@ -21,6 +21,7 @@ type Patient struct {
 	Date      time.Time
 	Name      string
 	Number_id string `gorm:"uniqueIndex"`
+	Disease   string
 
 	Record_byID *uint
 	Record_by   Nurse
