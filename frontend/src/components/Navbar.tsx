@@ -181,7 +181,7 @@ function Navbar() {
           >
             <MenuIcon />
           </IconButton>
-          <img src="/img/med-jar.png" width="50px"></img>
+          <img src="/img/hospitalisation.png" width="50px"></img>
           <Typography variant="h6" className={classes.title}>
             ระบบรับผู้ป่วยใน
           </Typography>
