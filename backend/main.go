@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/b6217167/sa-64-example/controller"
+	controller "github.com/b6217167/sa-64-example/controller/Admission"
 	"github.com/b6217167/sa-64-example/middlewares"
 
 	"github.com/b6217167/sa-64-example/entity"
