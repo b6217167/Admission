@@ -32,11 +32,6 @@ func CreateAdmission(c *gin.Context) {
 		return
 	}
 
-	/*if tx := entity.DB().Where("id = ?", admission.RoomID).First(&room.Roomtypes); tx.RowsAffected == 0 {
-		c.JSON(http.StatusBadRequest, gin.H{"error": "roomtype not found"})
-		return
-	}*/
-
 	// ค้นหา right_treatment ด้วย id
 	if tx := entity.DB().Where("id = ?", admission.Right_TreatmentID).First(&right_treatment); tx.RowsAffected == 0 {
 		c.JSON(http.StatusBadRequest, gin.H{"error": "right_trearment not found"})
