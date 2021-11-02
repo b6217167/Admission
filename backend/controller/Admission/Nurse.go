@@ -53,35 +53,3 @@ func ListNurses(c *gin.Context) {
 
 	c.JSON(http.StatusOK, gin.H{"data": nurses})
 }
-
-// DELETE /nurses/:id
-func DeleteNurse(c *gin.Context) {
-	id := c.Param("id")
-	if tx := entity.DB().Exec("DELETE FROM nurses WHERE id = ?", id); tx.RowsAffected == 0 {
-		c.JSON(http.StatusBadRequest, gin.H{"error": "nurse not found"})
-		return
-	}
-
-	c.JSON(http.StatusOK, gin.H{"data": id})
-}
-
-// PATCH /nurses
-func UpdateNurse(c *gin.Context) {
-	var nurse entity.Nurse
-	if err := c.ShouldBindJSON(&nurse); err != nil {
-		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
-		return
-	}
-
-	if tx := entity.DB().Where("id = ?", nurse.ID).First(&nurse); tx.RowsAffected == 0 {
-		c.JSON(http.StatusBadRequest, gin.H{"error": "nurse not found"})
-		return
-	}
-
-	if err := entity.DB().Save(&nurse).Error; err != nil {
-		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
-		return
-	}
-
-	c.JSON(http.StatusOK, gin.H{"data": nurse})
-}

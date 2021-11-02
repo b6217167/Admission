@@ -27,39 +27,27 @@ func main() {
 			protected.GET("/nurses", controller.ListNurses)
 			protected.GET("/nurse/:id", controller.GetNurse)
 			protected.POST("/nurses", controller.CreateNurse)
-			//r.POST("/users", controller.CreateMedicationRacord)
-			//protected.PATCH("/nurses", controller.UpdateNurse)
-			//protected.DELETE("/nurses/:id", controller.DeleteNurse)
 
 			protected.GET("/admissions", controller.ListAdmission)
 			protected.GET("/admission/:id", controller.GetAdmission)
 			protected.POST("/admissions", controller.CreateAdmission)
-			//protected.PATCH("/admissions", controller.UpdateAdmission)
-			//protected.DELETE("/admission/:id", controller.DeleteAdmission)
 
 			protected.GET("/patients", controller.ListPatients)
 			protected.GET("/patient/:id", controller.GetPatient)
 			protected.POST("/patients", controller.CreatePatient)
-			//protected.PATCH("/patients", controller.UpdatePatient)
-			//protected.DELETE("/patient/:id", controller.DeletePatient)
 
 			protected.GET("/rooms", controller.ListRoom)
 			protected.GET("/rooms/:id", controller.GetRoom)
 			protected.POST("/rooms", controller.CreateRoom)
-			//protected.PATCH("/rooms", controller.UpdateRoom)
-			//protected.DELETE("/rooms/:id", controller.DeleteRoom)
 
 			protected.GET("/roomtypes", controller.ListRoomtypes)
 			protected.GET("/roomtypes/:id", controller.GetRoomtype)
 			protected.POST("/roomtypes", controller.CreateRoomtype)
-			//protected.PATCH("/roomtypes", controller.UpdateRoomtype)
-			//protected.DELETE("/roomtypes/:id", controller.DeleteRoomtype)
 
 			protected.GET("/right_treatments", controller.ListRight_Treatments)
 			protected.GET("/right_treatments/:id", controller.GetRight_Treatment)
 			protected.POST("/right_treatments", controller.CreateRight_Treatment)
-			//protected.PATCH("/right_treatments", controller.UpdateRight_Treatment)
-			//protected.DELETE("/right_treatments/:id", controller.DeleteRight_Treatment)
+
 		}
 	}
 
